@@ -37,7 +37,7 @@ def predict():
     img = load_image()
     data={}
     categories = load_labels()
-    resulst = model.predict(img,conf=0.5)
+    resulst = model.predict(img,conf=0.5,device='cpu')
     a = resulst[0].boxes.boxes.cpu()
     px = pd.DataFrame(a).astype("float")
     result_labels = []
