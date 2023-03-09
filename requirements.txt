@@ -21,7 +21,4 @@ seaborn>=0.11.0
 #-------------------------------------------------
 ultralytics
 streamlit
-ffmpeg 
-libsm6 
-libxext6 
-libgl1-mesa-dev
+ffmpeg
