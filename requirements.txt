@@ -23,5 +23,5 @@ ultralytics
 streamlit
 ffmpeg 
 libsm6 
-libxext6 l
-ibgl1-mesa-dev
+libxext6 
+libgl1-mesa-dev
