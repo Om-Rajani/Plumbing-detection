@@ -47,7 +47,7 @@ def predict():
         y1 = int(row[1])
         x2 = int(row[2])
         y2 = int(row[3])
-        cv2.rectangle(img,(x1,y1),(x2,y2),(240,207,137),1)
+        cv2.rectangle(img,(x1,y1),(x2,y2),(0,0,255),1)
         t = int(px[5][index])
         r = categories[t]
         cv2.putText(img,str(r),(x1,y1),cv2.FONT_HERSHEY_PLAIN,2,(255,0,0),2)
