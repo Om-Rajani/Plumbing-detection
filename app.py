@@ -53,7 +53,7 @@ def predict():
         cv2.putText(img,str(r),(x1,y1),cv2.FONT_HERSHEY_PLAIN,2,(255,0,0),2)
         result_labels.append(r)
         result_accuracies.append(int(row[4]*100))
-    data = pd.DataFrame({'Labels':result_labels,'Accuracy':str(str(result_accuracies)+"%")})
+    data = pd.DataFrame({'Labels':result_labels,'Accuracy %':result_accuracies)})
     if len(data)!=0:
         st.image(img, channels="BGR")
         st.table(data)
