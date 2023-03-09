@@ -19,7 +19,7 @@ def load_image():
         return None
 
 def load_model():
-    model = YOLO('last.pt')
+    model = YOLO('best.pt')
     return model
 
 
