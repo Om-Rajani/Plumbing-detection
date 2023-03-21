@@ -49,9 +49,10 @@ def predict():
         y2 = int(row[3])
         cv2.rectangle(img,(x1,y1),(x2,y2),(0,0,255),1)
         t = int(px[5][index])
-        r = categories[t]
-        cv2.putText(img,str(r),(x1,y1),cv2.FONT_HERSHEY_PLAIN,2,(255,0,0),2)
-        result_labels.append(r)
+        #r = categories[t]
+        #cv2.putText(img,str(r),(x1,y1),cv2.FONT_HERSHEY_PLAIN,2,(255,0,0),2)
+        cv2.putText(img,str('Plumbing_Supplies'),(x1,y1),cv2.FONT_HERSHEY_PLAIN,2,(255,0,0),2)
+        result_labels.append('Plumbing_supplies')
         result_accuracies.append(int(row[4]*100))
     data = pd.DataFrame({'Labels':result_labels,'Accuracy %':result_accuracies})
     if len(data)!=0:
